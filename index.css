@@ -1,15 +1,14 @@
-/* Estilos base (mobile-first) */
 body {
   background-color: #D6EAF8;
   font-family: Arial, sans-serif;
   color: #333;
-  margin: 0; /* Elimina el margen por defecto */
 }
 
 header {
   text-align: center;
   padding: 8px;
   background-color: #fefdff;
+
   color: #000;
 }
 
@@ -47,12 +46,11 @@ main {
   padding: 20px;
   background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   margin: 20px auto;
   max-width: 800px;
 }
 
-/* Responsividad del equipo */
 .team {
   display: flex;
   justify-content: center;
@@ -64,11 +62,10 @@ main {
 .team-member {
   background-color: #f8f8f8;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   padding: 20px;
   text-align: center;
-  width: 200px; /* Ancho fijo, pero se ajustará al espacio */
-  flex: 1 1 150px; /* Flex para que se ajuste en pantallas más pequeñas */
+  width: 200px;
 }
 
 .team-member img {
@@ -90,7 +87,7 @@ main {
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 a {
@@ -104,12 +101,12 @@ a:hover {
 
 /* Banners */
 .slider-box {
-  width: 80%;
+  width: 80%;  
   height: auto;
   margin: 50px auto;
   overflow: hidden;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .slider-box ul {
@@ -130,7 +127,7 @@ a:hover {
   border-radius: 10px;
 }
 
-@keyframes slide {
+@keyframes slide { 
   0% {margin-left: 0;}
   10% {margin-left: 0;}
   20% {margin-left: -100%;}
@@ -160,7 +157,7 @@ a:hover {
   text-align: center;
   background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   padding: 20px;
   width: 80%;
   max-width: 800px;
@@ -177,7 +174,6 @@ a:hover {
   color: #000;
   font-size: 24px;
 }
-
 .seccion-item a {
   display: block;
   text-decoration: none; /* Elimina el subrayado del enlace */
@@ -188,31 +184,4 @@ a:hover {
   width: 100%;
   height: auto;
   border-radius: 10px;
-}
-
-/* Media Queries para pantallas más grandes (tablets y escritorio) */
-@media (min-width: 768px) {
-  nav ul li {
-    margin: 0 20px; /* Aumentar margen en pantallas grandes */
-  }
-
-  .team-member {
-    width: 250px; /* Ancho un poco mayor en pantallas grandes */
-  }
-
-  .secciones-column {
-    flex-direction: row; /* Cambiar a fila en pantallas más grandes */
-    flex-wrap: wrap;
-    justify-content: center; /* Centrar elementos */
-  }
-
-  .seccion-item {
-    width: 45%; /* Dos elementos en filas en pantallas grandes */
-  }
-}
-
-@media (min-width: 1024px) {
-  .seccion-item {
-    width: 30%; /* Tres elementos en filas en pantallas aún más grandes */
-  }
 }
